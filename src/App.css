@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #001523;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: #001523;
+  color: white;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #14293A;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  margin-right: 5px;
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.category-bar {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.category-bar button {
+  background-color: #14293A;
+  color: white;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-bar button.active {
+  background-color: #D6CC99;
+  color: black;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.duration {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.video-info {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 10px 10px;
+}
+
+.video-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.channel-name {
+  font-weight: bold;
+  text-align: left;
+  color: #9f9f9f;
+}
+
+.views {
+  margin-top: 3px;
+  color: #9f9f9f;
+  text-align: left;
+}
